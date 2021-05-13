@@ -746,5 +746,57 @@ body * {
 }
 
 .icons-section7 {
-  display: flex;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.mail {
+  display: inline-block;
+  width: 2.1em;
+  height: 2.1em;
+  vertical-align: middle;
+  text-decoration: none;
+  border: .25em solid rgba(0, 0, 0, 0);
+  border-radius: 100%;
+  background: #E3B873;
+  position: relative;
+  z-index: 1;
+  margin-right: 15px;
+}
+
+.mail::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-image: url("../icons/mail.png");
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  background-size: cover;
+}
+
+.insta {
+  display: inline-block;
+  width: 2.1em;
+  height: 2.1em;
+  vertical-align: middle;
+  text-decoration: none;
+  border: .25em solid rgba(0, 0, 0, 0);
+  border-radius: 100%;
+  background: #E3B873;
+  position: relative;
+  z-index: 1;
+}
+
+.insta::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-image: url("../icons/instagram.png");
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  background-size: cover;
 }
