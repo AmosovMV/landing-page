@@ -11,7 +11,7 @@ body * {
 }
 
 .content {
-  max-width: 1256px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -20,8 +20,6 @@ body * {
   justify-content: space-between;
   height: 83px;
   align-items: center;
-  /* max-width: 1200px; */
-  /* margin: 0 auto; */
 }
 
 .navi {
@@ -57,6 +55,80 @@ body * {
   font-family: 'Yeseva One', normal;
 }
 
+.overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.section-over {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+/* ---------------checkbox--------------------- */
+
+.label-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox {
+  display: none;
+}
+
+.style-check {
+  display: inline-flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(227, 184, 115, 1);
+  border: none;
+  position: relative;
+  margin-right: 10px;
+}
+
+.style-check::before {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  transition: 0.2s;
+  width: 1.2ex;
+  height: 0.4ex;
+  background: rgba(0, 0, 0, 0);
+  top: 0.9ex;
+  left: 0.4ex;
+  border: 3px solid white;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.checkbox:checked+.style-check::before {
+  opacity: 1;
+}
+
+.label-black {
+  font-size: 14px;
+  line-height: 163.68%;
+  color: #181818;
+}
+
+.label-white {
+  font-size: 14px;
+  line-height: 163.68%;
+  color: #FFFFFF;
+}
+
 /* Section1------------------------------ */
 
 .text-logo {
@@ -81,6 +153,7 @@ body * {
   padding-right: 730px;
   color: white;
   text-transform: uppercase;
+  margin-top: 200px;
 }
 
 .span-section1 {
@@ -123,18 +196,12 @@ body * {
   z-index: -1
 }
 
-.section1-content {
-  margin-top: 193px;
-  margin-bottom: 40px;
-}
-
 /* Section2------------------------------ */
 
 .section2 {
   background-color: black;
   padding-top: 50px;
-  display: flex;
-  justify-content: space-around;
+  height: 1074px;
 }
 
 .block-section2 {
@@ -279,11 +346,6 @@ body * {
   align-items: center;
 }
 
-.label {
-  font-size: 13px;
-  color: #36363680;
-}
-
 .input-form {
   border: none;
   outline: none;
@@ -309,23 +371,17 @@ body * {
 
 /* Section4------------------------------ */
 
-.section4 {
-  display: flex;
-  justify-content: space-around;
-}
+.section4 {}
 
 .block-section4 {
-  max-width: 1263px;
-  margin-left: 88px;
-  margin-right: 88px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 1800px;
 }
 
 .title-section4 {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .title-repair {
@@ -333,16 +389,19 @@ body * {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 130px;
 }
 
 .repair-icons {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .content-repair {
-  display: inline-flex;
-  margin-bottom: 25px;
+  display: flex;
+  margin-bottom: 150px;
 }
 
 .redecor {
@@ -350,6 +409,8 @@ body * {
   flex-direction: column;
   align-items: center;
   margin: 10px;
+  height: 650px;
+  width: 470px;
 }
 
 .redecor-list {
@@ -360,7 +421,6 @@ body * {
   font-size: 13px;
   line-height: 27px;
   color: #959595;
-  z-index: 1;
 }
 
 .redecor-list-title {
@@ -371,8 +431,6 @@ body * {
 }
 
 .leave_request {
-  width: 1263px;
-  height: 612px;
   display: flex;
   justify-content: space-around;
   background-image: url("../image/form_image.png");
@@ -430,7 +488,12 @@ body * {
   box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
   height: 35px;
   width: 350px;
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 1);
+}
+
+.label-check-section4 {
+  display: flex;
+  align-items: center;
 }
 
 .button-call {
@@ -438,9 +501,15 @@ body * {
   margin-right: 50px;
 }
 
+.form-measurer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .coins {
   display: flex;
-  align-self: flex-end;
+  justify-content: end;
   font-size: 18px;
   line-height: 26px;
   color: #E3B873;
@@ -450,29 +519,15 @@ body * {
 
 .section5 {
   position: relative;
-  overflow: hidden;
-  z-index: 3;
   background-image: url('../image/image5.png');
   background-size: cover;
   height: 864px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.section5::before {
-  background: rgb(57 53 53 / 71%);
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 864px;
-  z-index: -1
 }
 
 .section5-block {
-  width: 1440px;
   height: 864px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .section5-title {
@@ -497,11 +552,18 @@ body * {
 }
 
 .section5-image512 {
-  margin: 50px;
+  margin-right: 40px;
+  position: relative;
+  top: -70px;
+}
+
+.image5 {
+  margin: 15px;
 }
 
 .section5-image534 {
-  margin: 10px;
+  position: relative;
+  top: -110px;
 }
 
 .section5-ul {
@@ -518,16 +580,14 @@ body * {
 
 .section6 {
   width: 100%;
-  height: 864px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 1100px;
 }
 
 .section6-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 70px;
 }
 
 .title1-section6 {
@@ -536,8 +596,6 @@ body * {
   text-align: center;
   text-transform: uppercase;
   color: #181818;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .title2-section6 {
@@ -549,7 +607,6 @@ body * {
 
 .clients {
   display: flex;
-  width: 1440px;
   justify-content: space-around;
 }
 
@@ -576,7 +633,6 @@ body * {
   width: auto;
   height: 100%;
   margin: 0 auto;
-  /* box-shadow: 0 0 7px #666; */
 }
 
 .name {
@@ -620,38 +676,41 @@ body * {
 .section7 {
   background-image: url('../image/image7.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 1200px;
-  display: flex;
-  flex-direction: column;
   position: relative;
-  overflow: hidden;
-  z-index: 3;
-}
-
-.section7::before {
-  background: rgb(57 53 53 / 71%);
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1200px;
-  z-index: -1
+  height: 950px;
 }
 
 .section7-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  top: -200px;
 }
 
 .form-section7 {
-  background-color: #C4C4C4;
-  height: 445px;
-  width: 883px;
+  background-color: rgb(57 53 53);
+  height: 400px;
+  width: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.button-section7 {
+  font-size: 13px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #E3B873;
+  height: 55px;
+  width: 255px;
+  border-radius: 2px;
+  border: 0;
+  padding: 13px 33px;
 }
 
 .title-form-section7 {
@@ -673,11 +732,11 @@ body * {
 }
 
 .form-input-section7 {
-  background-color: #C4C4C4;
+  background-color: rgb(57 53 53);
   margin-right: 10px;
 }
 
-.title-cantact-section7 {
+.title-contact-section7 {
   font-size: 20px;
   line-height: 28px;
   text-align: center;

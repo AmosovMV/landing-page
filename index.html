@@ -14,7 +14,7 @@
 
 <body>
   <header class="header">
-    <div class="content content-header">
+    <div class="content-header content">
       <div class="text-logo font-sans">
         <p>IC "Repair Design Project"</p>
       </div>
@@ -51,7 +51,7 @@
     </section>
     <!-- -----------------------------------------section2------------------------------------------------------- -->
     <section class="section2">
-      <div class="block-section2">
+      <div class="content block-section21">
         <div class="select-image">
           <ul class="select">
             <li class="select-items font-yeseva">Rostov-on-Don, Admiral</li>
@@ -91,11 +91,11 @@
               </div>
             </div>
             <div class="select-bar">
-              <img src="./icons/vector_left.png" alt="Left">
+              <img src="./icons/vector_left.svg" alt="Left">
               <span class="point"></span>
               <span class="point"></span>
               <span class="point"></span>
-              <img src="./icons/vector_left.png" alt="Right">
+              <img src="./icons/vector_right.svg" alt="Right">
             </div>
           </div>
           <div class="project-image">
@@ -141,16 +141,19 @@
               <button class="button button-form" type="Submit">submit</button>
             </div>
           </div>
-          <div class="check">
-            <p class="label font-sans"><input checked type="checkbox" name="Agree"> I agree to the processing of
-              personal data</p>
+          <div class="label-check">
+            <label>
+              <input type="checkbox" class="checkbox" name="Agree">
+              <span class="style-check"></span>
+            </label>
+            <p class="label-black font-sans">I agree to the processing of personal data</p>
           </div>
         </form>
       </div>
     </section>
     <!-- -----------------------------------------section4------------------------------------------------------- -->
     <section class="section4">
-      <div class="block-section4">
+      <div class="block-section4 content">
         <div class="title-section4">
           <h2 class="title-repair font-yeseva">TYPES OF REPAIR</h2>
         </div>
@@ -230,24 +233,28 @@
               <p class="leave-text font-sans">Get a cost estimate and <br>the timing of your future repairs</p>
             </div>
           </div>
-
           <form class="form-request" action="">
             <p class="form-text font-sans">Leave a request for free <br>departure of the measurer</p>
-            <div>
-              <p class="label-form font-sans">Name</p>
-              <input class="form-request-input font-sans" type="text" name="Name" placeholder="What is your name:">
-            </div>
-            <div>
-              <p class="label-form font-sans">Phone</p>
-              <input class="form-request-input font-sans" type="text" name="Phone" placeholder="Your phone number:">
-            </div>
-            <div>
-              <p class="label-form font-sans">Email</p>
-              <input class="form-request-input font-sans" type="text" name="Email" placeholder="Your email:">
-            </div>
-            <div class="check">
-              <p class="label-form font-sans"><input checked type="checkbox" name="Agree"> I agree to the processing of
-                personal data</p>
+            <div class="form-measurer">
+              <div>
+                <p class="label-form font-sans">Name</p>
+                <input class="form-request-input font-sans" type="text" name="Name" placeholder="What is your name:">
+              </div>
+              <div>
+                <p class="label-form font-sans">Phone</p>
+                <input class="form-request-input font-sans" type="text" name="Phone" placeholder="Your phone number:">
+              </div>
+              <div>
+                <p class="label-form font-sans">Email</p>
+                <input class="form-request-input font-sans" type="text" name="Email" placeholder="Your email:">
+              </div>
+              <div class="label-check-section4">
+                <label>
+                  <input type="checkbox" class="checkbox" name="Agree">
+                  <span class="style-check"></span>
+                </label>
+                <p class="label-white font-sans">I agree to the processing of personal data</p>
+              </div>
             </div>
             <div class="button-call">
               <button class="button button-form" type="submit">Call the measurer</button>
@@ -262,7 +269,7 @@
     </section>
     <!-- -----------------------------------------section5------------------------------------------------------- -->
     <section class="section5">
-      <div class="section5-block">
+      <div class="content section5-block overlay">
         <div class="section5-list">
           <p class="section5-title font-yeseva">We realize your<br>
             wildest fantasies</p>
@@ -282,14 +289,16 @@
         </div>
         <div class="section5-image">
           <div class="section5-image512">
-            <img src="./image/image51.png" alt="Image51">
-            <img src="./image/image52.png" alt="Image52">
+            <img class="image5" src="./image/image51.png" alt="Image51">
+            <img class="image5" src="./image/image52.png" alt="Image52">
           </div>
           <div class="section5-image534">
-            <img src="./image/image53.png" alt="Image53">
-            <img src="./image/image54.png" alt="Image54">
+            <img class="image5" src="./image/image53.png" alt="Image53">
+            <img class="image5" src="./image/image54.png" alt="Image54">
           </div>
         </div>
+      </div>
+      <div class="section-over">
       </div>
     </section>
     <!-- -----------------------------------------section6------------------------------------------------------- -->
@@ -303,7 +312,7 @@
         </div>
         <p class="font-sans title2-section6">80% of our customers recommend us to their<br>friends and family.</p>
       </div>
-      <div class="clients">
+      <div class="clients content">
         <div class="client">
           <div class="client-name">
             <div class="photo">
@@ -311,7 +320,8 @@
             </div>
             <p class="name font-yeseva">Fedosova Maria Konstantinovna</p>
           </div>
-          <p class="font-sans client-font">I want to thank the guys for their work. We put your shower part in repair. I am very
+          <p class="font-sans client-font">I want to thank the guys for their work. We put your shower part in repair. I
+            am very
             grateful that I
             referred to the repair as to my own. Great thanks I express the project
             to Georgia for its professionalism and approach.
@@ -319,11 +329,11 @@
             performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
           </p>
           <div class="block-img">
-            <button class="font-yeseva button-section6" >40 m2</button>
+            <button class="font-yeseva button-section6">40 m2</button>
             <button class="font-yeseva button-section6">48 DAYS</button>
           </div>
         </div>
-        
+
         <div class="client">
           <div class="client-name">
             <div class="photo">
@@ -331,7 +341,8 @@
             </div>
             <p class="name font-yeseva">Afanasyev Sergey Alexandrovich</p>
           </div>
-          <p class="font-sans client-font">I want to thank the guys for their work. We put your shower part in repair. I am very
+          <p class="font-sans client-font">I want to thank the guys for their work. We put your shower part in repair. I
+            am very
             grateful that I
             referred to the repair as to my own. Great thanks I express the project
             to Georgia for its professionalism and approach.
@@ -339,9 +350,9 @@
             performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
           </p>
           <div class="block-img">
-            <button class="font-yeseva button-section6" >90 m2</button>
+            <button class="font-yeseva button-section6">90 m2</button>
             <button class="font-yeseva button-section6">128 DAYS</button>
-          </div>  
+          </div>
         </div>
 
         <div class="client">
@@ -351,7 +362,8 @@
             </div>
             <p class="name font-yeseva">Kiriev Egor Leonidovich</p>
           </div>
-          <p class="font-sans client-font">I want to thank the guys for their work. We put your shower part in repair. I am very
+          <p class="font-sans client-font">I want to thank the guys for their work. We put your shower part in repair. I
+            am very
             grateful that I
             referred to the repair as to my own. Great thanks I express the project
             to Georgia for its professionalism and approach.
@@ -359,7 +371,7 @@
             performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
           </p>
           <div class="block-img">
-            <button class="font-yeseva button-section6" >56 m2</button>
+            <button class="font-yeseva button-section6">56 m2</button>
             <button class="font-yeseva button-section6">86 DAYS</button>
           </div>
         </div>
@@ -367,33 +379,40 @@
     </section>
     <!-- -----------------------------------------section7------------------------------------------------------- -->
     <section class="section7">
-      <div class="section7-content">
+      <div class="section7-content content overlay">
         <div class="form-section7">
           <p class="font-yeseva title-form-section7">have any questions?</p>
           <div class="form-section7-cont1">
             <div>
-            <p class="label-form font-sans">Name</p>
-            <input class="form-request-input font-sans form-input-section7" type="text" name="Name" placeholder="What is your name:">
+              <p class="label-form font-sans">Name</p>
+              <input class="form-request-input font-sans form-input-section7" type="text" name="Name"
+                placeholder="What is your name:">
             </div>
             <div>
-            <p class="label-form font-sans">Phone</p>
-            <input class="form-request-input font-sans form-input-section7" type="text" name="Phone" placeholder="Your phone number:">
+              <p class="label-form font-sans">Phone</p>
+              <input class="form-request-input font-sans form-input-section7" type="text" name="Phone"
+                placeholder="Your phone number:">
             </div>
           </div>
           <div class="form-section7-cont2">
             <p class="label-form font-sans">Question</p>
-            <input class="form-request-input font-sans form-input-section7" type="text" name="Email" placeholder="I want to know:">
+            <input class="form-request-input font-sans form-input-section7" type="text" name="Email"
+              placeholder="I want to know:">
           </div>
-          <div class="check">
-            <p class="label-form font-sans label-form-section7"><input checked type="checkbox" name="Agree"> I agree to the processing of
-              personal data</p>
+          <div class="label-check">
+            <label>
+              <input type="checkbox" class="checkbox" name="Agree">
+              <span class="style-check"></span>
+            </label>
+            <p class="label-white font-sans">I agree to the processing of personal data</p>
           </div>
-          <div class="button_section7">
-            <button class="button button-form" type="submit">submit</button>
+          <div>
+            <button class="button-section7 font-sans" type="submit">submit</button>
           </div>
         </div>
         <div class="contact-section7">
-          <p class="font-yeseva title-cantact-section7"> Rostov-on-Don, Nansen St., 239 Shopping Center<br>Decorum Tel +7 (928) 768 32 29</p>
+          <p class="font-yeseva title-contact-section7"> Rostov-on-Don, Nansen St., 239 Shopping Center<br>Decorum Tel
+            +7 (928) 768 32 29</p>
           <div class="icons-section7">
             <img src="./icons/round.png" alt="Email">
             <img src="./icons/round.png" alt="Instagramm">
@@ -403,9 +422,11 @@
           </div>
         </div>
       </div>
+      <div class="section-over">
+      </div>
     </section>
   </main>
-  
+
   <footer class="header">
     <div class="content content-header">
       <div class="text-logo font-sans">
